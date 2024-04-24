@@ -1,77 +1,191 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Your awesome title | Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</title>
-<meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Your awesome title" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Your awesome title" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Your awesome title" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","headline":"Your awesome title","name":"Your awesome title","url":"http://localhost:4000/"}</script>
-<!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" /></head>
-<body><header class="site-header" role="banner">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog Post on Docker Application</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/">Your awesome title</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
-      </nav></div>
-</header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <div class="home">
-<h2 class="post-list-heading">Posts</h2>
-    <ul class="post-list"><li><span class="post-meta">Apr 23, 2024</span>
-        <h3>
-          <a class="post-link" href="/jekyll/update/2024/04/23/welcome-to-jekyll.html">
-            Welcome to Jekyll!
+    .post-list-heading {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .post-meta {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .post-link {
+      color: darkblue;
+      text-decoration: none;
+    }
+
+    .dockerhub-upload {
+      margin-top: 40px;
+    }
+
+    .dockerhub-upload h2 {
+      color: #333;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .dockerhub-upload ol {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .dockerhub-upload li {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    .dockerhub-upload img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .dockerhub-upload img.label {
+      display: block;
+      font-size: 14px;
+      color: #666;
+      margin-top: 5px;
+    }
+    
+  </style>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <!-- Header content -->
+  </header>
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <div class="home">
+        <h1>
+          <a class="post-link" href="/jekyll/update/2024/04/22/welcome-to-jekyll.html">
+            Welcome to the Blog Post on Docker made using Jekyll and Git Pages!
           </a>
-        </h3></li></ul>
-
-    <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p></div>
-
+        </h1>
+        <span class="post-meta">Apr 24, 2024</span>
       </div>
-    </main><footer class="site-footer h-card">
-  <data class="u-url" href="/"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">Your awesome title</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">Your awesome title</li><li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li></ul>
-      </div>
-
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
-</div>
-
-      <div class="footer-col footer-col-3">
-        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+      <!-- Section for Dockerhub image upload steps -->
+      <div class="dockerhub-upload">
+        <h2>Follow the below given steps to upload multi container(tier 3) image project to dockerhub</h2>
+        <ol>
+          <li>
+            <div class="step">
+              <strong>Step 1:</strong> Create your project's directory structure as shown in figure.
+            </div>
+            <img src="https://github.com/vishesh200/vishesh200.github.io/blob/master/images/%20Project%20Directory%20Structure.png" alt="Step 2: Create your project">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 2:</strong> Add dockerfile to each of the three tiers of the project like app, api and db as shown in further steps.
+            </div>
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 3:</strong> Add dockerfile in backend folder as shown: 
+            </div>
+            <img src="https://github.com/vishesh200/vishesh200.github.io/blob/master/images/backend%20dockerfile.png" alt="Step 2: Create your project">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 4:</strong> Add dockerfile in frontend folder as shown: 
+            </div>
+            <img src="https://github.com/vishesh200/vishesh200.github.io/blob/master/images/frontend%20dockerfile.png" alt="Step 2: Create your project">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 6:</strong> Based on the individual dockerfiles of tier three application, create a docker-compose.yml file in the root directory as shown: 
+            </div>
+            <img src="https://github.com/vishesh200/vishesh200.github.io/blob/master/images/docker-compose.yaml%20file.png" alt="Step 2: Create your project">
+          </li>
+          <li>
+          <li>
+            <div class="step">
+              <strong>Step 7:</strong> Build the project using docker-compose.yml file as shown: 
+            </div>
+            <img src="https://github.com/vishesh200/vishesh200.github.io/blob/master/images/docker-compose%20output.png" alt="Step 2: Create your project">
+          </li>
+          <li>
+            <div>The docker containers will start running:</div>
+            <img src="https://github.com/vishesh200/vishesh200.github.io/blob/master/images/Docker%20Containers%20Running.png" alt="Step 2: Create your project">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 9:</strong> Following is the output of the web application:
+            </div>
+            <img src="https://github.com/vishesh200/vishesh200.github.io/blob/master/images/Output%20of%20the%20Project.png" alt="Step 2: Create your project">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 10:</strong> Now to push the above created images to docker hub, first create a Dockerhub account if you don't have one already.
+            </div>
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 11:</strong> Tag your Docker image with your Dockerhub username and repository name like: <code>docker tag imagename yourusername/imagename:tag</code>.
+            </div>
+            <img src="https://github.com/vishesh200/vishesh200.github.io/blob/master/images/Renaming%20Docker%20images.png" alt="Step 5: Tag your Docker image">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 12:</strong> You can check that new image will be created with username/repositoryname.
+            </div>
+            <img src="https://github.com/vishesh200/vishesh200.github.io/blob/master/images/Updated%20Docker%20Images.png" alt="Step 6: Check new image">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 13:</strong> Log in to Dockerhub using the Docker CLI: <code>docker login</code>.
+            </div>
+            <img src="https://github.com/vishesh200/vishesh200.github.io/blob/master/images/Docker%20login.png" alt="Step 7: Log in to Dockerhub">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 14:</strong> Push your Docker image to Dockerhub as shown: <code>docker push yourusername/repositoryname:tag</code>.
+            </div>
+            <img src="https://github.com/vishesh200/vishesh200.github.io/blob/master/images/DockerHub%20Push%20Frontend.png" alt="Step 8: Push your Docker image">
+            <img src="https://github.com/vishesh200/vishesh200.github.io/blob/master/images/DockerHub%20Push%20Backend.png" alt="Step 8: Push your Docker image">
+            <img src="https://github.com/vishesh200/vishesh200.github.io/blob/master/images/DockerHub%20Push%20Mongo.png" alt="Step 8: Push your Docker image">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 15:</strong> Verify that your image is uploaded successfully on Dockerhub.
+            </div>
+            <img src="https://github.com/vishesh200/vishesh200.github.io/blob/master/images/DockerHub%20Output.png" alt="Step 9: Verify uploaded image">
+          </li>
+        </ol>
+        <h2>Thank You for Reading!</h2>
       </div>
     </div>
-
+  </main>
+  <footer class="site-footer h-card" style="padding: 15px; text-align: center;">
+    <div class="acknowledgment">
+      <h2>Acknowledgment</h2>
+      <p>The project used in this tutorial was cloned from the GitHub repository authored by Ajeet Singh Raina and Johan Giraldo.</p>
+      <p>You can find the original repository <a href="https://github.com/dockersamples/awesome-compose/tree/master/react-express-mongodb">here</a>.</p>
   </div>
-
-</footer>
+    <h3>Feel free to contact me in case of any doubts or queries!</h3>
+    <h3>My Email id: visheshrathi2008@gmail.com</h3>
+  </footer>
 </body>
-
 </html>
